@@ -1,0 +1,29 @@
+الفرق بين localStorage و sessionStorage في جافاسكريبت
+
+Window localStorage
+يسمح لك عنصر localStorage بحفظ البيانات كـ key / value في المتصفح.
+
+يخزن localStorage البيانات بدون تاريخ انتهاء الصلاحية. لا يتم حذف البيانات عند إغلاق المتصفح ، وتكون متاحة للجلسات المستقبلية. كائن sessionStorage الذي يخزن البيانات لجلسة واحدة. (يتم حذف البيانات عند إغلاق نافذة المتصفح)
+ 
+طريقة الكتابة
+window.localStorage
+أو
+localStorage
+ 
+اضافة عنصر جديد في localStorage
+localStorage.setItem(key, value);
+ 
+او
+localStorage.key = value;
+ 
+لقراءة البيانات من localStorage
+localStorage.getItem(key);
+ 
+او
+localStorage.key;
+ 
+حذف عنصر واحد من ال localStorage
+localStorage.removeItem(key);
+ 
+حذف جميع العناصر من ال localStorage
+localStorage.clear();
